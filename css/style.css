@@ -5,8 +5,8 @@ body {
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(255, 255, 255, 0.1), 
-      rgba(255, 255, 255, 0.1)
+      rgba(255, 255, 255, 0.2), 
+      rgba(255, 255, 255, 0.2)
     ),
     /* bottom, image */
     url(../img/bkg.png);
@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
+    background-position-y: top;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -22,7 +23,15 @@ body {
     max-height: 100vh;
     overflow: auto;
 }
-
+.googoo-img1 {
+    width: 100%;
+    margin-bottom:-4px;
+}
+.googoo-img {
+    width: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
 
 .parmain {
     font-size: 24px;
@@ -56,11 +65,12 @@ body {
 
 .title {
     font-size: 64px;
-    color:rgb(177, 105, 177);
+    color:rgb(223, 111, 223);
     font-family: 'Nunito', sans-serif;
     text-align: center;
     display:block;
     text-decoration: none;
+    
 }
 
 .title:hover {
@@ -84,7 +94,7 @@ body {
     margin-bottom: 20px;
 }
 .title-column a {
-    color: turquoise;
+    color: rgb(65, 236, 219);
     text-decoration: none;
 }
 .title-column a:hover {
@@ -203,6 +213,8 @@ body {
     
 }
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -215,14 +227,14 @@ html,
 body {
     height: 100%;
     position: relative;
-   }
+}
    
 .main-container {
     min-height: 100vh; /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px; /* height of your footer */
-   }
+    padding-bottom: 175px; /* height of your footer */
+}
 
  
