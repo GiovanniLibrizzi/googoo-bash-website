@@ -5,8 +5,8 @@ body {
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgb(0, 0, 0, 0.25), 
-      rgb(0, 0, 0, 0.25) 
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2) 
     ),
     /* bottom, image */
     url(../img/bkg.png?v=1);
@@ -81,6 +81,7 @@ a {
     text-align: center;
     display:block;
     text-decoration: none;
+    margin-bottom: -45px;
     
 }
 
@@ -208,10 +209,21 @@ body {
     
 }
 .footer a {
+    color:rgb(65, 236, 219);
     padding-top: 7px;
     display: block;
     line-height: 0.5;
     text-align:left;
+    text-decoration: none;
+
+}
+
+.footer a:hover {
+    color: rgb(136, 233, 180);
+    text-decoration: underline;
+    text-decoration-color:rgba(255, 255, 255, 0.9);
+
+
 }
 .ft-boxart {
 
