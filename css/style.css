@@ -241,11 +241,14 @@ body {
     padding: 10px;  
     bottom: 0;
     position: absolute;
+    overflow:hidden;
+
 
 }
 .footer{
     margin: auto;
     width:400px;
+    overflow:hidden;
     box-sizing: border-box;
 
     
