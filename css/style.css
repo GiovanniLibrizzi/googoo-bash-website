@@ -89,12 +89,24 @@ a {
 
 /* tools!! */
 #bullet {
-    color:rgb(255, 255, 255);
+    color:rgb(228, 255, 235);
     text-decoration: underline;
-    text-decoration-color:rgba(255, 255, 255, 0.5);
+    text-decoration-color:rgba(255, 255, 255, 0.35);
     font-style: italic;
     display: inline-block;
     margin-bottom: 5px;
+}
+
+#bullet a{
+    color:rgb(197, 235, 255);
+    text-decoration-color:rgba(255, 255, 255, 0.35);
+
+}
+
+#bullet a:hover{
+    color:rgb(133, 186, 214);
+    text-decoration-color:rgba(255, 255, 255, 0.35);
+
 }
 
 .tools-layer {
