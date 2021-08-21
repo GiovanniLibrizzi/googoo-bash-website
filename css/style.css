@@ -41,6 +41,8 @@ a {
 }
 
 .parmain {
+    margin: auto;
+    width: 750px;
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
     color: rgb(255, 255, 255);
@@ -55,9 +57,20 @@ a {
     padding: 10px;
 }
 
+
+#thin {
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+}
+
 #indent {
     text-indent: 50px;
     line-height: 1.6;
+}
+#indent-normal {
+    text-indent: 50px;
+    line-height: 1;
 }
 
 #center {
@@ -74,6 +87,34 @@ a {
 }
 
 
+/* tools!! */
+#bullet {
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color:rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.tools-layer {
+    background-color: rgba(0, 0, 0, 0.316);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.tools-layer p {
+    display: inline;
+}
+
+#black {
+    color: rgb(0,0,0);
+}
+
+/* title! */
 .title {
     font-size: 64px;
     color:rgb(223, 111, 223);
@@ -171,7 +212,7 @@ hr.thin {
     display: table;
 }
 .img-layer {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.4);
     position: relative;
     height: 100%;
     width: 100%;
