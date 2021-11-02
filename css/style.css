@@ -314,7 +314,15 @@ body {
     padding-bottom: 175px; /* height of your footer */
 }
 
- 
+ @media screen and (max-width: 450px) {
+    .title {
+        font-size: 50px;
+    }
+    .navbar {
+        font-size: 28px;
+    }
+     
+ }
 @media screen and (max-width: 900px) {
     #main {
         margin: 0%;
@@ -324,20 +332,22 @@ body {
     .title {
         margin: 0px;
         width: 100vw;
-        padding-right: 10px;
+        padding-right: 15px;
         margin-bottom: -4vh;
     }
     .title-column {
-        margin: 0px;
+
         width: 100vw;
         padding-right: 10px;
     }
 
+
     .navbar {
-        margin: 0px;
-        width: 100vw;
-        padding-right: 10px;
+        
+        padding: 0px;
+        padding-right: 20px;
     }
+
 
 
     hr.thin {
