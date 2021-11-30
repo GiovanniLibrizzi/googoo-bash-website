@@ -40,7 +40,7 @@ a {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
-.parmain {
+.parmain, .mainsmall {
     margin: auto;
     width: 750px;
     font-size: 24px;
@@ -48,6 +48,10 @@ a {
     color:rgb(241, 255, 245);
     -webkit-text-stroke: .2px black;
 
+}
+
+.mainsmall {
+    font-size: 19px;
 }
 
 
@@ -77,6 +81,7 @@ a {
     margin: auto;
     width: 60%;
     text-align:center;
+    display: block;
 }
 .center {
     text-align:center;
@@ -192,6 +197,13 @@ hr.thin {
     margin-bottom: 30px;
     width: 550px;
 }
+hr.thinlong {
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 
 
@@ -241,6 +253,49 @@ body {
     -ms-overflow-style: none;
 }
 
+/* -------COLLAPSIBLE ------ */
+.collapsible {
+    
+    font-size: 32px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+    
+    background-color: rgba(0, 0, 0, 0.241);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #00000077;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .content {
+    margin-bottom: 10px;
+
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #00000077;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+  }
+
 
 /* ----------------- FOOTER --------------- */
 .footer-layer {
@@ -252,13 +307,13 @@ body {
     padding: 10px;  
     bottom: 0;
     position: absolute;
+    display: block;
     overflow: hidden;
     
 
 
 }
 .footer{
-
     margin: auto;
     width:400px;
     overflow:hidden;
@@ -424,5 +479,7 @@ body {
         margin-bottom: 10vh;
 
     }
+
+
 }
 
